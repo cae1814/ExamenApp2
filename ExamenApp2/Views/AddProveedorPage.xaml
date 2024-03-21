@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenApp2.Views.AddProveedorPage"
+             xmlns:viewModels="clr-namespace:ExamenApp2.ViewModels"
+             x:DataType="viewModels:AddProveedorPageViewModel"
+             Title="Mantenimiento Proveedor">
+    <VerticalStackLayout Padding="30,10,30,10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Nombre:" FontSize="12" TextColor="#6E6E6E"/>
+        <Entry Text="{Binding Nombre}" Keyboard="Text" FontSize="12" TextColor="#6E6E6E" Placeholder="Ejemplo: Inversiones Armani"  />
+
+        <Label Text="Rtn:" FontSize="12" TextColor="#6E6E6E" />
+        <Entry Text="{Binding Rtn}" Keyboard="Text" FontSize="12" TextColor="#6E6E6E" Placeholder="Ejemplo: 08011900023654" />
+
+        <Label Text="Contacto:" FontSize="12" TextColor="#6E6E6E" />
+        <Entry Text="{Binding Contacto}" Keyboard="Text" FontSize="12" TextColor="#6E6E6E" Placeholder="Ejemplo: Juan C. Hernandez"/>
+
+        <Label Text="Correo electrónico:" FontSize="12" TextColor="#6E6E6E" />
+        <Entry Text="{Binding Correo}" Keyboard="Email" FontSize="12" TextColor="#6E6E6E" Placeholder="Ejemplo: ventas@contoso.com"/>
+
+        <Label Text="Telefono Contacto:" FontSize="12" TextColor="#6E6E6E" />
+        <Entry Text="{Binding TelefonoContacto}" Keyboard="Text" FontSize="12" TextColor="#6E6E6E" Placeholder="Ejemplo: 2374-3366"/>
+
+        <Button Text="Guardar" Command="{Binding AddUpdateCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

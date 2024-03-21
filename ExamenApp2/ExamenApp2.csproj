@@ -68,4 +68,22 @@
 		<PackageReference Include="SQLitePCLRaw.provider.e_sqlite3" Version="2.1.4" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Views\AddProveedorPage.xaml.cs">
+	    <DependentUpon>AddProveedorPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ProveedorMainPage.xaml.cs">
+	    <DependentUpon>ProveedorMainPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\AddProveedorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ProveedorMainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

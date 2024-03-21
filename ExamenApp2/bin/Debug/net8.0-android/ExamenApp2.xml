@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExamenApp2</name>
+    </assembly>
+    <members>
+        <member name="T:ExamenApp2.ViewModels.AddProveedorPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.AddProveedorPageViewModel.AddUpdate">
+            <summary>
+            Agrega o actualiza un registro
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.AddProveedorPageViewModel.Validar(ExamenApp2.Models.Proveedor)">
+            <summary>
+            Valida que los campos no esten vacíos
+            </summary>
+            <param name="Proveedor">Objeto a validar</param>
+            <returns></returns>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.AddProveedorPageViewModel.Alerta(System.String,System.String)">
+            <summary>
+            Método personalizado para construir alertas
+            </summary>
+            <param name="Tipo">Tipo de Alerta</param>
+            <param name="Mensaje">Mensaje de Alerta</param>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.Id">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.id"/>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.Nombre">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.nombre"/>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.Rtn">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.rtn"/>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.Contacto">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.contacto"/>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.TelefonoContacto">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.telefonoContacto"/>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.Correo">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.correo"/>
+        </member>
+        <member name="F:ExamenApp2.ViewModels.AddProveedorPageViewModel.addUpdateCommand">
+            <summary>The backing field for <see cref="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.AddUpdateCommand"/>.</summary>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.AddProveedorPageViewModel.AddUpdateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ExamenApp2.ViewModels.AddProveedorPageViewModel.AddUpdate"/>.</summary>
+        </member>
+        <member name="T:ExamenApp2.ViewModels.ProveedorMainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.ProveedorMainPageViewModel.GetAll">
+            <summary>
+            Obtiene el listado de Proveedores
+            </summary>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.ProveedorMainPageViewModel.GoToAddProveedorPage">
+            <summary>
+            Redirecciona al formulario de Proveedores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.ProveedorMainPageViewModel.SelectProveedor(ExamenApp2.Models.Proveedor)">
+            <summary>
+            Selecciona el registro para editar o eliminar
+            </summary>
+            <param name="Proveedor">Objeto a editar o eliminar</param>
+            <returns>Actualizar: Nos lleva al formulario de proveedores, Eliminar: Elimina el registro</returns>
+        </member>
+        <member name="M:ExamenApp2.ViewModels.ProveedorMainPageViewModel.Alerta(System.String,System.String)">
+            <summary>
+            Método personalizado para construir alertas
+            </summary>
+            <param name="Tipo">Tipo de Alerta</param>
+            <param name="Mensaje">Mensaje de Alerta</param>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.ProveedorMainPageViewModel.ProveedorCollection">
+            <inheritdoc cref="F:ExamenApp2.ViewModels.ProveedorMainPageViewModel.proveedorCollection"/>
+        </member>
+        <member name="F:ExamenApp2.ViewModels.ProveedorMainPageViewModel.goToAddProveedorPageCommand">
+            <summary>The backing field for <see cref="P:ExamenApp2.ViewModels.ProveedorMainPageViewModel.GoToAddProveedorPageCommand"/>.</summary>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.ProveedorMainPageViewModel.GoToAddProveedorPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ExamenApp2.ViewModels.ProveedorMainPageViewModel.GoToAddProveedorPage"/>.</summary>
+        </member>
+        <member name="F:ExamenApp2.ViewModels.ProveedorMainPageViewModel.selectProveedorCommand">
+            <summary>The backing field for <see cref="P:ExamenApp2.ViewModels.ProveedorMainPageViewModel.SelectProveedorCommand"/>.</summary>
+        </member>
+        <member name="P:ExamenApp2.ViewModels.ProveedorMainPageViewModel.SelectProveedorCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:ExamenApp2.ViewModels.ProveedorMainPageViewModel.SelectProveedor(ExamenApp2.Models.Proveedor)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Rtn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Rtn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Contacto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Contacto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TelefonoContacto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TelefonoContacto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Correo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Correo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProveedorCollection">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProveedorCollection" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Rtn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Rtn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Contacto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Contacto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TelefonoContacto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TelefonoContacto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Correo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Correo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProveedorCollection">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProveedorCollection" generated properties.</summary>
+        </member>
+    </members>
+</doc>

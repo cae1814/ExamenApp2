@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenApp2.Views.ProveedorMainPage"
+             xmlns:viewModel="clr-namespace:ExamenApp2.ViewModels"
+             x:DataType="viewModel:ProveedorMainPageViewModel"
+             xmlns:models="clr-namespace:ExamenApp2.Models"
+             Title="Lista de Proveedores">
+    <ScrollView>
+        <VerticalStackLayout Padding="10,0,10,0">
+            <Button Text="Agregar Proveedor" HorizontalOptions="Start" Command="{Binding GoToAddProveedorPageCommand}" FontSize="12" BackgroundColor="#0080FF" />
+
+            <Grid Margin="10,20,10,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*,33*,33*" >
+                <Label Text="Nombre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" FontSize="12" TextColor="#6E6E6E"/>
+                <Label Text="Rtn" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" FontSize="12" TextColor="#6E6E6E"/>
+                <Label Text="Contacto" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="2" FontSize="12" TextColor="#6E6E6E"/>
+                <Label Text="Correo" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="3" FontSize="12" TextColor="#6E6E6E"/>
+                <Label Text="Teléfono" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="4" FontSize="12" TextColor="#6E6E6E"/>
+            </Grid>
+            <CollectionView ItemsSource="{Binding ProveedorCollection}" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Proveedor">
+                        <Grid RowSpacing="0" RowDefinitions="10,Auto,10,0.5" ColumnDefinitions="33*,33*,33*,33*,33*" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding Nombre}" Grid.Row="1" Grid.Column="0" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding Rtn}" Grid.Row="1" Grid.Column="1" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding Contacto}" Grid.Row="1" Grid.Column="2" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding Correo}" Grid.Row="1" Grid.Column="3" FontSize="10" TextColor="#6E6E6E"/>
+                            <Label Text="{Binding TelefonoContacto}" Grid.Row="1" Grid.Column="4" FontSize="10" TextColor="#6E6E6E"/>
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:ProveedorMainPageViewModel}},Path=SelectProveedorCommand}" CommandParameter="{Binding .}" />
+                            </Grid.GestureRecognizers>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+    
+    
